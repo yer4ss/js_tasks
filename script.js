@@ -109,15 +109,23 @@
 // console.log(replaceInMass([1, -2, -3, -4, -5]));
 
 
-// const yearVisokosny = (year) => {
-//    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
-//       return true;
-//    } else {
-//       return false;
-//    }
-// }
-// console.log(yearVisokosny(2025));
+dsadasd
+dsadasdd
+as
 
+debugger
+asdas
+debuggerasd
+asdasas
+dsadasdd
+asdassd
+as
+debuggerasdda
+SVGDefsElementasd
+asdas
+debuggerasdd
+
+as
 
 // const chetnieInMass = (mass) => {
 //    let chetnie = [];
