@@ -1,10 +1,19 @@
-let button = document.getElementById("clckBtn");
+
+let button = document.querySelector(".clckBtn");
 button.addEventListener("click", function() {
-            console.log("Кнопка нажата");
+   console.log("клик");
 });
 
-
-let textElement = document.getElementById("dblClck");
+let textElement = document.querySelector(".dblClck");
 textElement.addEventListener("dblclick", function() {
-            textElement.textContent = "Двойной клик!";
+   textElement.textContent = "+ 1 Хамстер";
+});
+
+let msDwnElement = document.querySelector(".msDwn");
+msDwnElement.addEventListener("mousedown", function() {
+   msDwnElement.style.backgroundColor = "red";
+});
+
+msDwnElement.addEventListener("mouseup", function() {
+   msDwnElement.style.backgroundColor = "skyblue";
 });
