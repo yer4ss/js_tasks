@@ -1,6 +1,13 @@
-.msDwn {
+.blok {
    width: 200px;
    height: 200px;
    color: black;
    background-color: skyblue;
+}
+
+.btn {
+   background-color: skyblue;
+   color: black;
+   padding: 10px 20px;
+   cursor: pointer;
 }
