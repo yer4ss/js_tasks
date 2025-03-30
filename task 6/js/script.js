@@ -60,3 +60,5 @@ let movie = document.querySelectorAll('.promo__interactive-item');
 for (let i = 0; i < movieDB.movies.length; i++) {
     movie[i].textContent = `${i + 1} ${movieDB.movies[i]}`;
 }
+
+

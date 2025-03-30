@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продвинутые DOM-манипуляции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="dynamic-header">DOM Мастерская</h1>
+            <div id="header-controls">
+                <button id="add-header-btn" class="btn">Добавить подзаголовок</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="task-section" id="task1">
+                <h2>Задание 1: Сортировка списка</h2>
+                <ul id="sortable-list">
+                    <li>Первый элемент</li>
+                    <li>Второй элемент</li>
+                    <li>Третий элемент</li>
+                    <li>Четвертый элемент</li>
+                </ul>
+                <button id="sort-list-btn" class="btn">Перемешать список</button>
+            </section>
+
+            <section class="task-section" id="task2">
+                <h2>Задание 2: Динамическая форма</h2>
+                <div id="dynamic-form-container">
+                    <button id="add-field-btn" class="btn">Добавить поле</button>
+                </div>
+            </section>
+
+            <section class="task-section" id="task3">
+                <h2>Задание 3: Комментарии</h2>
+                <div id="comments-container">
+                    <div class="comment">
+                        <p>Первый комментарий</p>
+                        <button class="reply-btn">Ответить</button>
+                    </div>
+                </div>
+                <form id="comment-form">
+                    <input type="text" id="comment-input" placeholder="Ваш комментарий">
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </section>
+
+            <section class="task-section" id="task4">
+                <h2>Задание 4: Таблица с данными</h2>
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Имя</th>
+                            <th>Возраст</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Анна</td>
+                            <td>25</td>
+                            <td><button class="delete-row-btn">Удалить</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Иван</td>
+                            <td>30</td>
+                            <td><button class="delete-row-btn">Удалить</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="add-row-btn" class="btn">Добавить строку</button>
+            </section>
+
+            <section class="task-section" id="task5">
+                <h2>Задание 5: Дерево элементов</h2>
+                <div id="element-tree">
+                    <div class="node">Узел 1
+                        <div class="node">Узел 1.1</div>
+                        <div class="node">Узел 1.2</div>
+                    </div>
+                    <div class="node">Узел 2</div>
+                </div>
+                <button id="add-node-btn" class="btn">Добавить узел</button>
+                <button id="move-node-btn" class="btn">Переместить узел</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div id="notification-area"></div>
+            <p>© 2023 DOM Мастерская</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
