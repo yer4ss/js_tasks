@@ -65,19 +65,21 @@ document.getElementById("add-field-btn").addEventListener("click", function() {
 
 document.getElementById("add-row-btn").addEventListener("click", function() {
     let data_table = document.getElementById("data-table");
-    let new_data_table = data_table.insertRow();
+    let new_row = data_table.insertRow();
 
     let id = data_table.rows.length - 1;
+    new_row.insertCell(0).textContent = id;
+    
     let name = "имя";
+    new_row.insertCell(1).textContent = name;
+    
     let age = Math.floor(Math.random() * 10);
+    new_row.insertCell(2).textContent = age;
 
-    new_data_table.insertCell(0).textContent = id;
-    new_data_table.insertCell(1).textContent = name;
-    new_data_table.insertCell(2).textContent = age;
-    new_data_table.insertCell(3).innerHTML = "<button class='delete-row-btn'>Удалить</button>";
+    new_row.insertCell(3).innerHTML = "<button class='delete-row-btn'>Удалить</button>";
 
-    new_data_table.querySelector(".delete-row-btn").addEventListener("click", function() {
-        new_data_table.remove();
+    new_row.querySelector(".delete-row-btn").addEventListener("click", function() {
+        new_row.remove();
     });
 });
 
